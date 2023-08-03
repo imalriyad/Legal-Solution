@@ -36,11 +36,11 @@
 </head>
 
 <body>
-    <header class="max-w-screen-xl mx-auto md:px-16 px-4 lg:px-0 poppins py-1">
-            <div class="navbar flex justify-between items-center align-middle">
-                <div>
+    <header class="max-w-screen-xl mx-auto md:px-16 px-4 lg:px-6 poppins py-1">
+            <div class="navbar flex lg:justify-between items-center">
+                <div class="flex-1 lg:flex-none">
                   <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost px-0 lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -51,10 +51,12 @@
                         <li><a>Contact us</a></li>
                       </ul>
                   </div>
-                  <a class="btn btn-ghost hover:bg-transparent normal-case text-xl"><img src="./images/logo2.png" class="h-[30px] md:h-auto" alt="">
-                </a>
+                  <div class="mx-auto">
+                    <a class="btn text-center btn-ghost hover:bg-transparent normal-case text-xl"><img src="./images/logo2.png" class="h-[30px] md:h-auto" alt="">
+                    </a>
+                  </div>
                 </div>
-                <div class="text-lg breadcrumbs hidden lg:block">
+                <div class="text-lg mt-[8px] breadcrumbs hidden lg:block">
                     <ul>
                       <li><a>Home</a></li> 
                       <li><a>Services</a></li> 
@@ -67,8 +69,24 @@
                 <div class="lg:block hidden">
                   <a class="btn normal-case text-white font-normal md:text-base bg-[#B68C5A] hover:bg-[#B68C5A]">Free Consultation</a>
                 </div>
-                <div><button class="btn btn-sm normal-case text-white font-normal bg-[#B68C5A] hover:bg-[#B68C5A]">Cases</button></div>
+                <div class="lg:hidden block">
+                    <button class="btn btn-sm md:btn-md normal-case text-white font-normal bg-[#B68C5A] hover:bg-[#B68C5A]">Cases</button>
+                </div>
               </div>
+
+   <!-- Hero section -->
+   <div class="hero my-10 rounded-xl h-[400px] md:h-[550px]" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+    <div class="hero-overlay rounded-xl bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>
+    
+
     </header>
 </body>
 </html>
